@@ -51,7 +51,7 @@
                 containLabel: true
             },
             legend: {
-                data: ['平均','观山湖', '六盘水', '毕节','安顺', '铜仁', '黔西南','黔南', '黔东南', '遵义', '贵阳'],
+                data: ['平均','黔西南','黔南', '黔东南', '遵义','铜仁','六盘水','安顺', '贵阳','观山湖','毕节'],
                 right: 20,
                 top: 12,
                 textStyle: {
@@ -143,12 +143,15 @@
             series: [{
                 name: '黔西南',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 // 柱状图数据显示
                 label:{
-                    show:true,              //是否显示
-                    position: 'inside',     //标签位置
-                    rotate: 90              //旋转度数
+                    show:true,                              //是否显示
+                    // color: "rgba(252, 252, 252, 1)",     //字体颜色
+                    // textShadowColor: "rgba(4, 4, 4, 1)", //背影颜色
+                    // fontWeight: "bold",                  //字体家属
+                    position: "insideTop",    //标签位置
+                    //rotate: 90              //旋转度数
                 },
                 // itemStyle. barBorderRadius圆角半径，单位px，支持传入数组分别指定 4 个圆角半径
                 itemStyle: {
@@ -179,11 +182,11 @@
             {
                 name: '黔南',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 label:{
                     show:true,
                     position: 'inside',
-                    rotate: 90
+                    //rotate: 90
                 },
                 itemStyle: {
                     normal: {
@@ -214,11 +217,11 @@
             {
                 name: '黔东南',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 label:{
                     show:true,
-                    position: 'inside',
-                    rotate: 90
+                    position: 'insideBottom',
+                    //rotate: 90
                 },
                 itemStyle: {
                     normal: {
@@ -248,11 +251,11 @@
             {
                 name: '遵义',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 label:{
                     show:true,
-                    position: 'inside',
-                    rotate: 90
+                    position: 'insideTop',
+                    //rotate: 90
                 },
                 itemStyle: {
                     normal: {
@@ -282,11 +285,11 @@
             {
                 name: '铜仁',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 label:{
                     show:true,
                     position: 'inside',
-                    rotate: 90
+                    //rotate: 90
                 },
                 itemStyle: {
                     normal: {
@@ -316,11 +319,11 @@
             {
                 name: '六盘水',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 label:{
                     show:true,
-                    position: 'inside',
-                    rotate: 90
+                    position: 'insideBottom',
+                    //rotate: 90
                 },
                 itemStyle: {
                     normal: {
@@ -350,11 +353,11 @@
             {
                 name: '安顺',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 label:{
                     show:true,
-                    position: 'inside',
-                    rotate: 90
+                    position: 'insideTop',
+                   //rotate: 90
                 },
                 itemStyle: {
                     normal: {
@@ -384,11 +387,11 @@
             {
                 name: '贵阳',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 label:{
                     show:true,
                     position: 'inside',
-                    rotate: 90
+                    //rotate: 90
                 },
                 itemStyle: {
                     normal: {
@@ -418,11 +421,11 @@
             {
                 name: '观山湖',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 label:{
                     show:true,
-                    position: 'inside',
-                    rotate: 90
+                    position: 'insideBottom',
+                    //rotate: 90
                 },
                 itemStyle: {
                     normal: {
@@ -452,12 +455,12 @@
             {
                 name: '毕节',
                 type: 'bar',
-                barWidth: '5%',
+                barWidth: '6%',
                 // 柱状图标签数据显示
                 label:{
                     show:true,
-                    position: 'inside',
-                    rotate: 90
+                    position: 'insideTop',
+                    //rotate: 90
                 },
                 itemStyle: {
                     normal: {
