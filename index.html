@@ -18,6 +18,34 @@
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
         var option = {
+            toolbox: {
+                show: true,
+                //插件功能栏开始
+                feature: {
+                //缩放还在学习 注意是在feature内
+                // dataZoom: {
+                // yAxisIndex: "none"
+                // },
+                dataView: {
+                //是否不可编辑（只读）
+                readOnly: false
+                },
+                magicType: {
+                type: ["line", "bar"]
+                },
+                restore: {},
+                saveAsImage: {},
+                },
+                //插件功能栏结束
+                showTitle: true,
+                itemGap: 10,
+                top: "7%",
+                right: "5%",
+                // 标识颜色
+                iconStyle: {
+                borderColor: "rgba(114, 230, 12, 1)"
+                },
+            },
             title: {
                 "text": "全年活跃率-数据均为百分比",
                 "subtext": "BY Shen Liang (更新中)",
@@ -546,5 +574,4 @@
         myChart.setOption(option);
     </script>
 </body>
-
 </html>
